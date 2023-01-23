@@ -7,12 +7,12 @@ const BoxForm = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         props.onNewInput(color);
-        setColor(''); //borrar el campo de entrada al enviar el formulario
+        setColor(''); //Valor del estado al enviar el formulario
     };
     
     return (
         <form className='form' onSubmit={ handleSubmit }>
-            <h3>Choose a color...</h3>
+            <label htmlFor='color'>Choose a color:</label>
             <input className='color-input'
                 type='text' 
                 placeholder="Enter your box color"

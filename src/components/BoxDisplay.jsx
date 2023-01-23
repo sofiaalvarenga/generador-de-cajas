@@ -7,9 +7,9 @@ const BoxDisplay = (props) => {
     return ( //Map crea una lista que asigne color de acuerdo al input registrado
         <div className='display'>
             <h3>Your boxes</h3>
-            {boxes.map((item,idx)=>{
-                return <div className="boxes" key={idx} style={{background: item, width:'50px', height:'50px'}}></div>})
-            };
+            {boxes.map((color, id)=>{
+                return <div className="boxes" key={id} style={{background: color, width: `50px`, height: `50px`}}></div>})
+            }
         </div>
     );
 };
